@@ -33,8 +33,8 @@ var getPlatforms = function (projectName) {
   platforms.push({
     name : 'ios',
     // TODO: use async fs.exists
-    isAdded : fs.existsSync('platforms/ios'),
-    iconsPath : 'platforms/ios/' + projectName + xcodeFolder,
+    isAdded : fs.existsSync('resources/ios'),
+    iconsPath : 'resources/ios/icon/',
     icons : [
       { name: 'icon-20.png',             size : 20   },
       { name: 'icon-20@2x.png',          size : 40   },
@@ -68,22 +68,22 @@ var getPlatforms = function (projectName) {
   });
   platforms.push({
     name : 'android',
-    isAdded : fs.existsSync('platforms/android'),
-    iconsPath : 'platforms/android/app/src/main/res/',
+    isAdded : fs.existsSync('resources/android'),
+    iconsPath : 'resources/android/icon/',
     icons : [
-      { name : 'drawable/icon.png',       size : 96 },
-      { name : 'drawable-hdpi/icon.png',  size : 72 },
-      { name : 'drawable-ldpi/icon.png',  size : 36 },
-      { name : 'drawable-mdpi/icon.png',  size : 48 },
-      { name : 'drawable-xhdpi/icon.png', size : 96 },
-      { name : 'drawable-xxhdpi/icon.png', size : 144 },
-      { name : 'drawable-xxxhdpi/icon.png', size : 192 },
-      { name : 'mipmap-hdpi/icon.png',  size : 72 },
-      { name : 'mipmap-ldpi/icon.png',  size : 36 },
-      { name : 'mipmap-mdpi/icon.png',  size : 48 },
-      { name : 'mipmap-xhdpi/icon.png', size : 96 },
-      { name : 'mipmap-xxhdpi/icon.png', size : 144 },
-      { name : 'mipmap-xxxhdpi/icon.png', size : 192 }
+      { name : 'drawable-icon.png',       size : 96 },
+      { name : 'drawable-hdpi-icon.png',  size : 72 },
+      { name : 'drawable-ldpi-icon.png',  size : 36 },
+      { name : 'drawable-mdpi-icon.png',  size : 48 },
+      { name : 'drawable-xhdpi-icon.png', size : 96 },
+      { name : 'drawable-xxhdpi-icon.png', size : 144 },
+      { name : 'drawable-xxxhdpi-icon.png', size : 192 },
+      { name : 'mipmap-hdpi-icon.png',  size : 72 },
+      { name : 'mipmap-ldpi-icon.png',  size : 36 },
+      { name : 'mipmap-mdpi-icon.png',  size : 48 },
+      { name : 'mipmap-xhdpi-icon.png', size : 96 },
+      { name : 'mipmap-xxhdpi-icon.png', size : 144 },
+      { name : 'mipmap-xxxhdpi-icon.png', size : 192 }
     ]
   });
   platforms.push({
